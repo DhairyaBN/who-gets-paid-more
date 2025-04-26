@@ -13,8 +13,6 @@ with open(model_path, 'rb') as f:
 with open(features_path, 'rb') as f:
     model_features = pickle.load(f)
 
-model_features = [f for f in model_features if f != 'marital_status']
-
 def predict_income(user_input: dict) -> str:
     """
     Predict income class based on input features.

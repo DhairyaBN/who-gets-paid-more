@@ -54,6 +54,16 @@ education = st.selectbox(
     help="Highest level of formal education completed."
 )
 
+marital_status_options = [
+     "Never-married", "Married-civ-spouse", "Divorced",
+     "Separated", "Widowed", "Married-spouse-absent"
+ ]
+ marital_status = st.selectbox(
+     "Marital Status",
+     marital_status_options,
+     index=0,
+     help="Current marital status."
+ )
 
 occupation_options = [
     "Exec-managerial", "Prof-specialty", "Craft-repair", "Sales",
